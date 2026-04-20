@@ -30,7 +30,7 @@ DnDJ is a **desktop app** (Windows-focused builds; macOS support where provided)
 
 ## Get a license
 
-1. **Download** the latest release for your OS (see **Releases** on this repository or your distributor page).
+1. **Download** the latest release for your OS (see **Releases** on this repository).
 2. **Purchase** a license from the **Bass Union** store (powered by Lemon Squeezy).
 3. **Activate** inside the app: enter your license key; the app talks to Lemon Squeezy to validate and lock the license to your **Machine ID** (shown in the activation window).
 
