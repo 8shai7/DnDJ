@@ -38,8 +38,6 @@ DnDJ is a **desktop app** (Windows-focused builds; macOS support where provided)
 
 👉 **[Click Here!](https://bassunion.lemonsqueezy.com/checkout/buy/647444e5-bcb2-4e82-8dc9-06314fd5ff4e)**  
 
-*(Tip: set `DNDJ_CHECKOUT_URL` or edit `CHECKOUT_BASE_URL` in `license_manager.py` so the in-app **Buy License** button opens your real checkout.)*
-
 After purchase you receive your **license key by email** (if configured in your store). Keep that key — you’ll need it again if you reinstall on the **same** machine.
 
 ---
