@@ -1,0 +1,56 @@
+name: Build Nuitka EXE
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+  pull_request:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: |
+            requirements.txt
+            requirements-build.txt
+
+      - name: Cache Nuitka artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            .nuitka-cache
+            build/main.build
+            dist/main.build
+          key: nuitka-${{ runner.os }}-${{ hashFiles('main.py', 'requirements-build.txt', 'build_nuitka.ps1') }}
+          restore-keys: |
+            nuitka-${{ runner.os }}-
+
+      - name: Install build dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-build.txt
+
+      - name: Build with Nuitka
+        shell: pwsh
+        env:
+          NUITKA_CACHE_DIR: ${{ github.workspace }}\.nuitka-cache
+        run: |
+          ./build_nuitka.ps1
+
+      - name: Upload executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: DnDj_by_Bass_Union-windows
+          path: dist/DnDj_by_Bass_Union.exe
+          if-no-files-found: error
