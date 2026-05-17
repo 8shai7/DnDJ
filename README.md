@@ -11,9 +11,9 @@
 | **Faster prep** | Search, download, and analyze without juggling five browser tabs and separate editors. |
 | **Built-in polish** | Trim, fades, and waveform editing with BPM and musical key detection. |
 | **Organized output** | ID3 tagging so your library and decks stay readable. |
-| **Licensed for real use** | Per-machine activation via **Lemon Squeezy** — buy once, activate online, keep working offline after activation. |
+| **Secure & Offline** | Per-machine activation managed automatically via our **Discord Bot**. |
 
-DnDJ is a **desktop app** (Windows-focused builds; macOS support where provided). Your license is tied to your machine for fair use — no subscription games unless you choose a subscription product on the store.
+DnDJ is a **desktop app** (Windows-focused builds; macOS support where provided). Your license is tied to your machine to ensure fair use. Our advanced offline security allows you to activate your computer once and keep working offline, while keeping everything securely bound to your hardware.
 
 ---
 
@@ -30,21 +30,19 @@ DnDJ is a **desktop app** (Windows-focused builds; macOS support where provided)
 
 ## Get a license
 
-1. **Download** the latest release for your OS (see **Releases** on this repository).
-2. **Purchase** a license from the **Bass Union** store (powered by Lemon Squeezy).
-3. **Activate** inside the app: enter your license key; the app talks to Lemon Squeezy to validate and lock the license to your **Machine ID** (shown in the activation window).
+1. **Purchase** your license on our official store at **Whop.com**.
+2. **Join the Discord** — Once purchased, ensure your Discord account is linked to your Whop account. You will automatically receive the VIP `DNDJ` role in our official Discord server.
+3. **Get your Key** — Our automated Discord bot will instantly send you a private message. Reply to the bot with your **Machine ID** (found inside the DnDJ app).
+4. **Activate** — The bot will reply with your personal Product Key. Enter it in the app, and you're good to go!
 
-**Buy DnDJ**
-
-👉 **[Click Here!](https://bassunion.lemonsqueezy.com/checkout/buy/647444e5-bcb2-4e82-8dc9-06314fd5ff4e)**  
-
-After purchase you receive your **license key by email** (if configured in your store). Keep that key — you’ll need it again if you reinstall on the **same** machine.
+*Note: You can only activate one computer at a time. If you get a new computer, simply type `!reset_computer` in your private chat with the bot to unlink your old machine.*
 
 ---
 
 ## Requirements
 
 - **Windows 10/11** (64-bit) for the primary `.exe` build
+- **macOS 11+** (Intel & Apple Silicon M1/M2/M3) for the `.app` package
 
 ---
 
@@ -56,8 +54,8 @@ DnDJ is a **tool for working with audio you are allowed to use**. You are respon
 
 ## Support
 
-- **Issues & updates:** use this repository’s **Issues** / **Releases** (replace with your support email or Discord if you prefer).  
-- **License problems:** use the email address on your Lemon Squeezy receipt, or the seller contact configured in your store.
+- **Issues & updates:** Report any bugs or feature requests in our official Discord server.
+- **License problems:** Open a ticket in our Discord server, and our support team will be happy to assist you.
 
 ---
 
